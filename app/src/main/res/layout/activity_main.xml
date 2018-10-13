@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DBD6D6">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.2">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/Tab1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/makeup" />
+
+                        <Button
+                            android:id="@+id/Tab2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/skincare" />
+
+                        <Button
+                            android:id="@+id/Tab3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/haircare" />
+
+                        <Button
+                            android:id="@+id/Tab4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/beautytools" />
+
+                        <Button
+                            android:id="@+id/Tab5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/homefragrance" />
+
+                        <Button
+                            android:id="@+id/Tab6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/gifts" />
+
+                        <Button
+                            android:id="@+id/Tab7"
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dip"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/men" />
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <View
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="#787878" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.8">
+
+
+                    <LinearLayout
+                        android:id="@+id/lltab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="This is tab 1" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </ScrollView>
+</LinearLayout>
