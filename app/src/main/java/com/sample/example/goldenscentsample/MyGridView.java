@@ -7,7 +7,6 @@ import android.widget.GridView;
 /**
  * Created by sweety on 12-Oct-18.
  */
-
 public class MyGridView extends GridView {
     boolean expanded = false;
 

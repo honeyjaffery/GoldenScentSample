@@ -78,7 +78,6 @@ public class ListViewAdapter extends BaseExpandableListAdapter implements Adapte
         return textView;
     }
 
-
     public View getChildView(int groupPosition, int childPosition,
                              boolean isLastChild, View convertView, ViewGroup parent) {
         if (convertView == null) {
@@ -142,8 +141,6 @@ public class ListViewAdapter extends BaseExpandableListAdapter implements Adapte
         SimpleAdapter simperAdapter = new SimpleAdapter(parentContext, data,
                 R.layout.item_menu, new String[]{"itemImage", "itemText"},
                 new int[]{R.id.item_image, R.id.item_text});
-
-
         return simperAdapter;
     }
 

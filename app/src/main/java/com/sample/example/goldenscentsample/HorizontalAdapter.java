@@ -53,7 +53,6 @@ public class HorizontalAdapter extends RecyclerView.Adapter<HorizontalAdapter.My
         holder.itemName.setText(itemNameList.get(position));
         holder.itemNameDesc.setText(itemDescList.get(position));
         holder.itemPrice.setText(itemPriceList.get(position));
-
 //        if(!itemDiscList.get(position).equals("0 SR")) {
             holder.itemPrice.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
             holder.itemDisPrice.setVisibility(View.VISIBLE);

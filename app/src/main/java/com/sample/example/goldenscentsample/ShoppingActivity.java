@@ -69,7 +69,6 @@ public class ShoppingActivity extends AppCompatActivity {
             }
             treeNode.add(node);
         }
-
         treeViewAdapter.UpdateTreeNode(treeNode);
         expandableListView.setAdapter(treeViewAdapter);
         /**

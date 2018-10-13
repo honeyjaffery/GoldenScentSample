@@ -1,5 +1,4 @@
 package com.sample.example.goldenscentsample;
-
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
